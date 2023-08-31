@@ -28,6 +28,10 @@
   margin: 0;
   padding: 0;
 }
+html
+{
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--primary-color);
 }
@@ -52,6 +56,8 @@ h1 {
   text-decoration: none;
   font-family: var(--action-font-family);
   border-radius: 4px;
+  outline: none;
+  border: none;
   transition: all ease 0.4s;
 }
 .button-medium:hover {
@@ -181,4 +187,38 @@ h1 {
 
 .textHighlight:hover span{
   color: var(--action-color)
+}
+.form-section input{
+  display: block;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 5px;
+  font-size: larger;
+  padding: 5px;
+  color: var(--primary-text-color);
+  background: transparent;
+  outline: 0;
+}
+
+.form-section label
+{
+  display: inline-block;
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: large;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.form-section
+{
+  margin-bottom: 10px;
+}
+.form-container{
+  display: inline-block;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+.form-container button
+{
+  margin-left: 50%;
+  transform: translate(-50%,0);
 }
